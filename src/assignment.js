@@ -20,12 +20,7 @@ function sumOfNumbers(arrayOfNumbers) {
       }
     return total;
     }
-  //  assignment.sumOfNumbers = sumOfNumbers;
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  const scores = [50, 65, 53, 74, 65, 86, 97, 80, 92, 100];
-  console.log(`The sum of all the Numbers: ${sumOfNumbers(numbers)}`);
-  console.log(`The sum of all the Scores: ${sumOfNumbers(scores)}`);
-
+   assignment.sumOfNumbers = sumOfNumbers;
 
 /**
  * Challenge - 2
@@ -37,11 +32,15 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    return arrayOfNumbers.filter( even => (even % 2 === 0))
+     let count = 0;
+    for (let j = 0; j < arrayOfNumbers.length; j++) {
+        if (arrayOfNumbers[j] % 2 === 0) {
+            count++;
+        }
+    }
+    return count;
 }
-// assignment.countEvenNumbers = countEvenNumbers;
-const evenNumbers = [2, 4, 7, 10, 12, 15, 35, 18, 20, 27, 99]
-  console.log(`The even numbers are: ${countEvenNumbers(evenNumbers)}`)
+assignment.countEvenNumbers = countEvenNumbers;
 
 
 /**
